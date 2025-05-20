@@ -76,7 +76,7 @@ This project is licensed under the MIT License.
 
 🌐 Live Demo (Optional)
 If deployed, add the link here:
-👉 CalcMaster Live Demo
+👉 https://calc-master-mauve.vercel.app/
 
 👨‍💻 Developed by
 Ankit Kumar
