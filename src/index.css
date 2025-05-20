@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-800 dark:text-gray-200;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+}
+
+@layer components {
+  /* Coin animation styles */
+  @keyframes flip {
+    0% { transform: rotateY(0); }
+    100% { transform: rotateY(720deg); }
+  }
+  
+  .coin {
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-out;
+  }
+  
+  .coin > div {
+    backface-visibility: hidden;
+    transition: transform 0.6s ease-out;
+  }
+  
+  .flipping {
+    animation: flip 1.5s ease-in-out;
+  }
+  
+  /* General animation utilities */
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  /* Responsive padding adjustments */
+  @media (max-width: 640px) {
+    .container {
+      @apply px-4;
+    }
+  }
+}
+
+/* Custom scrollbar styles for supported browsers */
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-gray-800;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 dark:bg-gray-600 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gray-400 dark:bg-gray-500;
+  }
+}
