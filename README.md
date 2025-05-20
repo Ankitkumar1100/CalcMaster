@@ -2,7 +2,8 @@
 
 CalcMaster is a modern, responsive, and multi-functional web app built to handle essential everyday calculations with ease and style. Whether you're calculating loans, academic grades, statistical data, or just want to toss a virtual coin — CalcMaster has it all!
 
-![CalcMaster Screenshot](./)
+![CalcMaster Screenshot](./![Screenshot 2025-05-20 134150](https://github.com/user-attachments/assets/eac86b4b-5f0e-4818-a4b0-ef8c69939c13)
+)
 
 ---
 
@@ -65,6 +66,8 @@ npm run dev
 ├── index.html
 ├── vite.config.ts
 └── tailwind.config.js
+
+```
 
 🤝 Contributing
 Feel free to fork this project and contribute by submitting pull requests. Bug fixes, UI improvements, or new calculator tools are welcome!
